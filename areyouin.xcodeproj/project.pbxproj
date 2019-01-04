@@ -15,6 +15,10 @@
 		46E90BED21DF983F00AAC967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E90BEB21DF983F00AAC967 /* LaunchScreen.storyboard */; };
 		46E90BFA21DF9C7A00AAC967 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90BF921DF9C7A00AAC967 /* EventsViewController.swift */; };
 		46E90BFD21DF9F7500AAC967 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90BFC21DF9F7500AAC967 /* EventCollectionViewCell.swift */; };
+		46E90BFF21DFA54E00AAC967 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90BFE21DFA54E00AAC967 /* Event.swift */; };
+		46E90C0121DFA5C700AAC967 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90C0021DFA5C700AAC967 /* Person.swift */; };
+		46E90C0321DFA5FC00AAC967 /* AttendanceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90C0221DFA5FC00AAC967 /* AttendanceStatus.swift */; };
+		46E90C0621DFAF3600AAC967 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90C0521DFAF3600AAC967 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		46E90BEE21DF983F00AAC967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E90BF921DF9C7A00AAC967 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		46E90BFC21DF9F7500AAC967 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		46E90BFE21DFA54E00AAC967 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		46E90C0021DFA5C700AAC967 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		46E90C0221DFA5FC00AAC967 /* AttendanceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceStatus.swift; sourceTree = "<group>"; };
+		46E90C0521DFAF3600AAC967 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F3BA3F60C852D10D4EB2F9BD /* Pods_areyouin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_areyouin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +85,7 @@
 				46E90BF421DF98E100AAC967 /* Model */,
 				46E90BF521DF98EB00AAC967 /* View */,
 				46E90BF621DF98F600AAC967 /* ViewModel */,
+				46E90C0421DFAF2300AAC967 /* Extensions */,
 				46E90BE921DF983F00AAC967 /* Assets.xcassets */,
 				46E90BEE21DF983F00AAC967 /* Info.plist */,
 				46E90BE621DF983B00AAC967 /* areyouin.xcdatamodeld */,
@@ -87,6 +96,9 @@
 		46E90BF421DF98E100AAC967 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				46E90BFE21DFA54E00AAC967 /* Event.swift */,
+				46E90C0221DFA5FC00AAC967 /* AttendanceStatus.swift */,
+				46E90C0021DFA5C700AAC967 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +127,14 @@
 				46E90BFC21DF9F7500AAC967 /* EventCollectionViewCell.swift */,
 			);
 			path = Events;
+			sourceTree = "<group>";
+		};
+		46E90C0421DFAF2300AAC967 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46E90C0521DFAF3600AAC967 /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B63B57352C9559795DED607E /* Pods */ = {
@@ -240,9 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E90C0121DFA5C700AAC967 /* Person.swift in Sources */,
 				46E90BE821DF983B00AAC967 /* areyouin.xcdatamodeld in Sources */,
 				46E90BFD21DF9F7500AAC967 /* EventCollectionViewCell.swift in Sources */,
+				46E90C0621DFAF3600AAC967 /* Date.swift in Sources */,
 				46E90BE021DF983B00AAC967 /* AppDelegate.swift in Sources */,
+				46E90BFF21DFA54E00AAC967 /* Event.swift in Sources */,
+				46E90C0321DFA5FC00AAC967 /* AttendanceStatus.swift in Sources */,
 				46E90BFA21DF9C7A00AAC967 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
