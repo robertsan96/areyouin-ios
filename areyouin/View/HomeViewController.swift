@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  EventsViewController.swift
 //  areyouin
 //
 //  Created by Robert Sandru on 1/4/19.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UIView {
+class EventsViewController: UIViewController {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func viewDidLoad() {
+        
     }
-    */
+}
+
+extension EventsViewController {
 
 }
