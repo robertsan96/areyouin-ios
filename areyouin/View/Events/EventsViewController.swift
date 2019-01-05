@@ -9,31 +9,41 @@
 import UIKit
 
 class EventsViewController: UIViewController {
-
+    
     var events: [Event] = [
         
         Event(name: "Wedding 👰🏻",
               backgroundImage: UIImage(named: "Wedding"),
               date: Date(dateString: "2022-07-09"),
               nameColor: UIColor.black,
-              dateColor: UIColor.black),
+              dateColor: UIColor.black,
+              
+              groups: Group.DUMMY(number: 10)
+        ),
         Event(name: "Hawaii Holiday ❤️",
               backgroundImage: UIImage(named: "Ocean"),
               date: Date(dateString: "2019-12-12"),
               nameColor: UIColor.white,
               dateColor: UIColor.white,
-              personsInColor: UIColor.white),
+              personsInColor: UIColor.white,
+              
+              groups: Group.DUMMY(number: 4)),
         Event(name: "Retezat Teambuilding",
               backgroundImage: UIImage(named: "Clouds"),
               date: Date(dateString: "2019-04-02"),
               nameColor: UIColor.black,
-              dateColor: UIColor.black),
+              dateColor: UIColor.black,
+              
+              groups: Group.DUMMY(number: 7)),
         Event(name: "Depeche Mode Concert",
               backgroundImage: UIImage(named: "Concert"),
               date: Date(dateString: "2019-08-01"),
               nameColor: UIColor.white,
               dateColor: UIColor.white,
-              personsInColor: UIColor.white)
+              personsInColor: UIColor.white,
+              appearanceStyle: .dark,
+              
+              groups: Group.DUMMY(number: 2))
     ]
     
     var selectedEvent: Event?
@@ -52,7 +62,7 @@ class EventsViewController: UIViewController {
         
         navigationController?.navigationBar.isHidden = true
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.toEventDetails.identifier() {
             guard let selectedEvent = selectedEvent else { return }

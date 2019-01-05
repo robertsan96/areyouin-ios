@@ -11,6 +11,10 @@
 		46CDFF8721E0F1DA00BD4609 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF8621E0F1DA00BD4609 /* EventDetailsViewController.swift */; };
 		46CDFF8921E0F20800BD4609 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF8821E0F20800BD4609 /* Segue.swift */; };
 		46CDFF8C21E0F29100BD4609 /* EventDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF8B21E0F29100BD4609 /* EventDetailsVM.swift */; };
+		46CDFF9021E1089200BD4609 /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF8F21E1089200BD4609 /* AppearanceStyle.swift */; };
+		46CDFF9321E1141F00BD4609 /* EventPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF9221E1141F00BD4609 /* EventPersonTableViewCell.swift */; };
+		46CDFF9521E119CC00BD4609 /* GroupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF9421E119CC00BD4609 /* GroupType.swift */; };
+		46CDFF9721E11A8300BD4609 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDFF9621E11A8300BD4609 /* Group.swift */; };
 		46E90BE021DF983B00AAC967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E90BDF21DF983B00AAC967 /* AppDelegate.swift */; };
 		46E90BE521DF983B00AAC967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E90BE321DF983B00AAC967 /* Main.storyboard */; };
 		46E90BE821DF983B00AAC967 /* areyouin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46E90BE621DF983B00AAC967 /* areyouin.xcdatamodeld */; };
@@ -30,6 +34,10 @@
 		46CDFF8621E0F1DA00BD4609 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		46CDFF8821E0F20800BD4609 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		46CDFF8B21E0F29100BD4609 /* EventDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsVM.swift; sourceTree = "<group>"; };
+		46CDFF8F21E1089200BD4609 /* AppearanceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceStyle.swift; sourceTree = "<group>"; };
+		46CDFF9221E1141F00BD4609 /* EventPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPersonTableViewCell.swift; sourceTree = "<group>"; };
+		46CDFF9421E119CC00BD4609 /* GroupType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupType.swift; sourceTree = "<group>"; };
+		46CDFF9621E11A8300BD4609 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		46E90BDC21DF983B00AAC967 /* areyouin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = areyouin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E90BDF21DF983B00AAC967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E90BE421DF983B00AAC967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,15 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
+		46CDFF9121E113FE00BD4609 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				46E90BFC21DF9F7500AAC967 /* EventCollectionViewCell.swift */,
+				46CDFF9221E1141F00BD4609 /* EventPersonTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		46E90BD321DF983B00AAC967 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +130,9 @@
 				46E90BFE21DFA54E00AAC967 /* Event.swift */,
 				46E90C0221DFA5FC00AAC967 /* AttendanceStatus.swift */,
 				46E90C0021DFA5C700AAC967 /* Person.swift */,
+				46CDFF9421E119CC00BD4609 /* GroupType.swift */,
+				46CDFF8F21E1089200BD4609 /* AppearanceStyle.swift */,
+				46CDFF9621E11A8300BD4609 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,8 +158,8 @@
 		46E90BFB21DF9CA900AAC967 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				46CDFF9121E113FE00BD4609 /* Cells */,
 				46E90BF921DF9C7A00AAC967 /* EventsViewController.swift */,
-				46E90BFC21DF9F7500AAC967 /* EventCollectionViewCell.swift */,
 				46CDFF8621E0F1DA00BD4609 /* EventDetailsViewController.swift */,
 			);
 			path = Events;
@@ -280,14 +300,18 @@
 				46E90C0121DFA5C700AAC967 /* Person.swift in Sources */,
 				46E90BE821DF983B00AAC967 /* areyouin.xcdatamodeld in Sources */,
 				46CDFF8C21E0F29100BD4609 /* EventDetailsVM.swift in Sources */,
+				46CDFF9721E11A8300BD4609 /* Group.swift in Sources */,
 				46E90BFD21DF9F7500AAC967 /* EventCollectionViewCell.swift in Sources */,
 				46CDFF8921E0F20800BD4609 /* Segue.swift in Sources */,
 				46E90C0621DFAF3600AAC967 /* Date.swift in Sources */,
+				46CDFF9521E119CC00BD4609 /* GroupType.swift in Sources */,
 				46E90BE021DF983B00AAC967 /* AppDelegate.swift in Sources */,
+				46CDFF9321E1141F00BD4609 /* EventPersonTableViewCell.swift in Sources */,
 				46E90BFF21DFA54E00AAC967 /* Event.swift in Sources */,
 				46CDFF8721E0F1DA00BD4609 /* EventDetailsViewController.swift in Sources */,
 				46E90C0321DFA5FC00AAC967 /* AttendanceStatus.swift in Sources */,
 				46E90BFA21DF9C7A00AAC967 /* EventsViewController.swift in Sources */,
+				46CDFF9021E1089200BD4609 /* AppearanceStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

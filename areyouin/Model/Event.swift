@@ -13,7 +13,7 @@ class Event {
     var name: String?
     var backgroundImage: UIImage?
     var date: Date?
-    var persons: [Person] = []
+    var groups: [Group] = []
     
     var nameColor: UIColor?
     var dateColor: UIColor?
@@ -31,20 +31,24 @@ class Event {
         return 4
     }
     
+    var appearance: AppearanceStyle = .light
+    
     init(name: String?,
          backgroundImage: UIImage?,
          date: Date?,
          nameColor: UIColor? = UIColor.black,
          dateColor: UIColor? = UIColor.black,
          personsInColor: UIColor? = UIColor.black,
-         persons: [Person] = []) {
+         appearanceStyle: AppearanceStyle? = .light,
+         groups: [Group] = []) {
         self.name = name
         self.backgroundImage = backgroundImage
         self.date = date
-        self.persons = persons
+        self.groups = groups
         
         self.nameColor = nameColor
         self.dateColor = dateColor
         self.personsInColor = personsInColor
+        self.appearance = appearanceStyle ?? .light
     }
 }
