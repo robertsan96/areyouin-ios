@@ -33,8 +33,10 @@ class EventsViewController: UIViewController {
               date: Date(dateString: "2019-08-01"),
               nameColor: UIColor.white,
               dateColor: UIColor.white,
-              personsInColor: UIColor.white),
+              personsInColor: UIColor.white)
     ]
+    
+    var selectedEvent: Event?
     
     @IBOutlet weak var eventsCollectionView: UICollectionView!
     
@@ -47,6 +49,17 @@ class EventsViewController: UIViewController {
         
         eventsCollectionView.dataSource = self
         eventsCollectionView.delegate = self
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.toEventDetails.identifier() {
+            guard let selectedEvent = selectedEvent else { return }
+            let eventDetailsVC = (segue.destination as? EventDetailsViewController)
+            let eventDetailsVM = EventDetailsVM(with: selectedEvent)
+            eventDetailsVC?.viewModel = eventDetailsVM
+        }
     }
 }
 
@@ -68,6 +81,9 @@ extension EventsViewController: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedEvent = events[indexPath.row]
+        performSegue(withIdentifier: Segues.toEventDetails.identifier(), sender: self)
+    }
     
 }
