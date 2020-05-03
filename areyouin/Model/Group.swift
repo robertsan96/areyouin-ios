@@ -9,7 +9,7 @@
 import Foundation
 
 class Group {
-    
+
     var name: String?
     var persons: [Person] = []
     var type: GroupType = .single
